@@ -96,7 +96,7 @@ resource "aws_cloudfront_distribution" "react_app_distribution" {
       }
     }
 
-    viewer_protocol_policy = "allow-all" # Allow both HTTP and HTTPS
+    viewer_protocol_policy = "Redirect-To-HTTPS" # Redirect HTTP to HTTPS
     min_ttl                = 0
     default_ttl            = 3600
     max_ttl                = 86400
